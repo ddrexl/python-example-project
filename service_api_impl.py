@@ -8,3 +8,6 @@ def get_by_id(id: int):
         if user['id'] == id:
             return user
     return 'User not found', 404
+
+
+# additional code
