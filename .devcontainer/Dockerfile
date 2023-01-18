@@ -1,0 +1,10 @@
+FROM python:3.10-alpine
+
+RUN apk add --no-cache --update \
+    git
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Expose the application's port
+EXPOSE 8000
